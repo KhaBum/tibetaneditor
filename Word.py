@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from typing import List, Set
 
-from RDRPOSTagger.new_api import Tagger, models
+from RDRPOSTagger import Tagger, models
 from pytib import Segment
-from Tokenizer import Tokenizer
-from ProcessingPipeline import Pipeline
+from NLPtokenizer import Tokenizer
+from NLPpipeline import Pipeline
 
 class Word:
     def __init__(self, content):
@@ -12,8 +12,28 @@ class Word:
         self.partOfSpeech = None
         self.tagIsOn = False
         self.level = 0
+
+        self.taggedModePosition = 0
+        self.plainTextModePosition = 0
+
         self.start = 0
-        self.length = len(self.content)
+        self.highlighted = {}
+
+    def isInPartOfSpeech(self, index):
+        if self.length <= index < self.length + self.partOfSpeechLen:
+            return True
+        else:
+            return False
+
+    def needHighlighted(self):
+        if True:
+            for index, textFormat in self.highlighted.items():
+                if self.isInPartOfSpeech(index):
+                    return textFormat
+
+    @property
+    def length(self):
+        return len(self.content)
 
     @property
     def end(self):
@@ -22,6 +42,13 @@ class Word:
     @property
     def partOfSpeechEnd(self):
         return self.end + self.partOfSpeechLen
+
+    @property
+    def modeEnd(self):
+        if self.tagIsOn:
+            return self.partOfSpeechEnd
+        else:
+            return self.end
 
     @property
     def partOfSpeechLen(self):
@@ -93,6 +120,11 @@ class WordManager:
         # position 介於 start, end 之間(不包含)，用在 changeTag
         for i, word in enumerate(self._words):
             if word.start < position < word.end:
+                return word
+
+    def getIndexWord(self, position):
+        for i, word in enumerate(self._words):
+            if word.start <= position < word.end:
                 return word
 
     def removeWord(self, position):
