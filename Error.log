@@ -426,3 +426,205 @@ Traceback (most recent call last):
     if start in range(self._words[i].start, self._words[i].end):
 IndexError: list index out of range
 INFO:root:========================================
+INFO:root:========================================
+INFO:root:Time: 2018-01-16 10:27:05.558254
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Editor.pyw", line 205, in segment
+    newWords = self.wordManager.NLPtokenize(text[start:end])
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Word.py", line 52, in NLPtokenize
+    return [Word(token) for token in Tokenizer(self.tokenizer).process(sentence)]
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 20, in process
+    text = self.helpers.normalize_punct_of(text)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 20, in process
+    text = self.helpers.normalize_punct_of(text)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 714, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:root:========================================
+INFO:root:========================================
+INFO:root:Time: 2018-01-16 10:32:28.282377
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Editor.pyw", line 205, in segment
+    newWords = self.wordManager.NLPtokenize(text[start:end])
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Word.py", line 52, in NLPtokenize
+    return [Word(token) for token in Tokenizer(self.tokenizer).process(sentence)]
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 17, in process
+    affix_particles=True)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 245, in segment
+    compound = self.do_compound(uncompound)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 245, in segment
+    compound = self.do_compound(uncompound)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 714, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:root:========================================
+INFO:root:========================================
+INFO:root:Time: 2018-01-16 10:40:50.720541
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Editor.pyw", line 205, in segment
+    newWords = self.wordManager.NLPtokenize(text[start:end])
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Word.py", line 52, in NLPtokenize
+    return [Word(token) for token in Tokenizer(self.tokenizer).process(sentence)]
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 17, in process
+    affix_particles=True)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 244, in segment
+    reinsert_aa=reinsert_aa, distinguish_ra_sa=distinguish_ra_sa)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 120, in basis_segmentation
+    strip_list(syls)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 120, in basis_segmentation
+    strip_list(syls)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 714, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:root:========================================
+INFO:root:========================================
+INFO:root:Time: 2018-01-16 10:41:50.144417
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Editor.pyw", line 205, in segment
+    newWords = self.wordManager.NLPtokenize(text[start:end])
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Word.py", line 52, in NLPtokenize
+    return [Word(token) for token in Tokenizer(self.tokenizer).process(sentence)]
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 23, in process
+    tokens = self.split_in_tokens(text)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 23, in process
+    tokens = self.split_in_tokens(text)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 714, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:root:========================================
+INFO:root:========================================
+INFO:root:Time: 2018-01-16 10:49:16.937816
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Editor.pyw", line 205, in segment
+    newWords = self.wordManager.NLPtokenize(text[start:end])
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Word.py", line 52, in NLPtokenize
+    return [Word(token) for token in Tokenizer(self.tokenizer).process(sentence)]
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 17, in process
+    affix_particles=True)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 254, in segment
+    reinsert_aa=reinsert_aa, distinguish_ra_sa=distinguish_ra_sa)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 149, in basis_segmentation
+    paragraph = re.sub(r' (པ|བ|པོ|བོ)(\s|་)', r'\1\2', paragraph)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 149, in basis_segmentation
+    paragraph = re.sub(r' (པ|བ|པོ|བོ)(\s|་)', r'\1\2', paragraph)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 714, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:root:========================================
+INFO:root:========================================
+INFO:root:Time: 2018-01-16 10:50:27.102889
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Editor.pyw", line 205, in segment
+    newWords = self.wordManager.NLPtokenize(text[start:end])
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Word.py", line 52, in NLPtokenize
+    return [Word(token) for token in Tokenizer(self.tokenizer).process(sentence)]
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 17, in process
+    affix_particles=True)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 254, in segment
+    reinsert_aa=reinsert_aa, distinguish_ra_sa=distinguish_ra_sa)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 122, in basis_segmentation
+    if ends_with_tsek:
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 122, in basis_segmentation
+    if ends_with_tsek:
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 714, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:root:========================================
+INFO:root:========================================
+INFO:root:Time: 2018-01-16 10:53:25.106938
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Editor.pyw", line 205, in segment
+    newWords = self.wordManager.NLPtokenize(text[start:end])
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Word.py", line 52, in NLPtokenize
+    return [Word(token) for token in Tokenizer(self.tokenizer).process(sentence)]
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 17, in process
+    affix_particles=True)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 254, in segment
+    reinsert_aa=reinsert_aa, distinguish_ra_sa=distinguish_ra_sa)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 125, in basis_segmentation
+    text = []
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 125, in basis_segmentation
+    text = []
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 714, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:root:========================================
+INFO:root:========================================
+INFO:root:Time: 2018-01-16 10:56:12.111379
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Editor.pyw", line 205, in segment
+    newWords = self.wordManager.NLPtokenize(text[start:end])
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Word.py", line 52, in NLPtokenize
+    return [Word(token) for token in Tokenizer(self.tokenizer).process(sentence)]
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 17, in process
+    affix_particles=True)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 269, in segment
+    return compound
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 269, in segment
+    return compound
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 714, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:root:========================================
+INFO:root:========================================
+INFO:root:Time: 2018-01-16 10:57:52.695371
+ERROR:root:Uncaught exception
+Traceback (most recent call last):
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Editor.pyw", line 205, in segment
+    newWords = self.wordManager.NLPtokenize(text[start:end])
+  File "/home/drupchen/PycharmProjects/tibetaneditor/Word.py", line 52, in NLPtokenize
+    return [Word(token) for token in Tokenizer(self.tokenizer).process(sentence)]
+  File "/home/drupchen/PycharmProjects/tibetaneditor/NLPtokenizer.py", line 17, in process
+    affix_particles=True)
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 260, in segment
+    if danying:
+  File "/home/drupchen/PycharmProjects/tibetaneditor/pytib/Segmentation.py", line 260, in segment
+    if danying:
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 714, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/drupchen/.local/share/umake/ide/pycharm/helpers/pydev/pydevd.py", line 817, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+INFO:root:========================================

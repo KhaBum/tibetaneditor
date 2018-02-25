@@ -117,12 +117,13 @@ class POStagging:
                 return dict([tuple(line.split(sep)) for line in content])
         else:
             pos = self.tagger.dictionary
-            pos.update(self.expandWithAffixes(pos))
+            pos.update(self.expand_with_affixes(pos))
             with open(self.expanded_vocab_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(['{}{}{}'.format(word, sep, tag) for word, tag in pos.items()]))
             return pos
 
-    def expandWithAffixes(self, vocab):
+    @staticmethod
+    def expand_with_affixes(vocab):
         tsek = '་'
         yang_4 = ["ི", "ུ", "ེ", "ོ"]
         endings = {"འི": "ai", "ས": "s", "ར": "r", "འམ": "am", "འང": "ang", "འོ": "ao"}
